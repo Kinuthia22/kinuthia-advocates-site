@@ -11,11 +11,13 @@ export const Route = createFileRoute("/practice-areas")({
       {
         name: "description",
         content:
-          "Litigation, conveyancing, corporate, family, IP, tax and more — comprehensive Kenyan legal services from Kinuthia Anthony & Company Advocates.",
+          "Litigation, conveyancing, corporate, family, IP, tax and more — comprehensive Kenyan legal services from Kinuthia Anthony & Company Advocates in Nairobi.",
       },
       { property: "og:title", content: "Practice Areas — Kinuthia Anthony & Company Advocates" },
       { property: "og:description", content: "Comprehensive legal services across the Kenyan legal landscape." },
+      { property: "og:url", content: "https://kinuthia-advocates-site.lovable.app/practice-areas" },
     ],
+    links: [{ rel: "canonical", href: "https://kinuthia-advocates-site.lovable.app/practice-areas" }],
   }),
   component: PracticeAreasPage,
 });
