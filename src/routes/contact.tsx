@@ -74,8 +74,8 @@ function ContactPage() {
               <div className="rounded-sm border-l-2 border-accent bg-card p-6 shadow-[var(--shadow-card)]">
                 <Mail className="h-6 w-6 text-accent" />
                 <h3 className="mt-4 font-serif text-lg font-semibold text-foreground">Email</h3>
-                <a href="mailto:info@kinuthiaanthonyadvocates.co.ke" className="mt-2 block break-all text-sm text-muted-foreground hover:text-accent">
-                  info@kinuthiaanthonyadvocates.co.ke
+                <a href="mailto:advocateskinuthia@gmail.com" className="mt-2 block break-all text-sm text-muted-foreground hover:text-accent">
+                  advocateskinuthia@gmail.com
                 </a>
               </div>
               <div className="rounded-sm border-l-2 border-accent bg-card p-6 shadow-[var(--shadow-card)]">
