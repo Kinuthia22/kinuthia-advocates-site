@@ -5,6 +5,8 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { practiceAreas } from "@/lib/practice-areas";
 import heroImg from "@/assets/hero-justice.jpg";
 
+const SITE_URL = "https://kinuthia-advocates-site.lovable.app";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -12,12 +14,43 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Boutique Nairobi law firm offering bespoke legal services in litigation, conveyancing, corporate, family, IP and tax law across Kenya.",
+          "Kinuthia Anthony & Company Advocates is a boutique Nairobi law firm offering bespoke legal services in litigation, conveyancing, corporate, family, IP and tax law across Kenya.",
       },
+      { name: "keywords", content: "Kinuthia Anthony & Company Advocates, Kinuthia Advocates, Anthony Kinuthia advocate, Nairobi law firm, Kenya advocates, commissioner for oaths Nairobi, notary public Kenya, conveyancing Nairobi, litigation Kenya" },
       { property: "og:title", content: "Kinuthia Anthony & Company Advocates" },
       { property: "og:description", content: "Bespoke, efficient and competent legal services in Nairobi, Kenya." },
+      { property: "og:url", content: SITE_URL },
+      { property: "og:site_name", content: "Kinuthia Anthony & Company Advocates" },
       { property: "og:image", content: heroImg },
       { name: "twitter:image", content: heroImg },
+    ],
+    links: [{ rel: "canonical", href: SITE_URL + "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LegalService",
+          name: "Kinuthia Anthony & Company Advocates",
+          alternateName: ["Kinuthia Advocates", "Kinuthia Anthony Advocates"],
+          description:
+            "Boutique Nairobi law firm offering bespoke legal services in litigation, conveyancing, corporate, family, IP and tax law across Kenya.",
+          url: SITE_URL,
+          telephone: "+254793980462",
+          email: "advocateskinuthia@gmail.com",
+          image: SITE_URL + heroImg,
+          priceRange: "$$",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Madonna House Annex, Westlands Road",
+            addressLocality: "Nairobi",
+            addressCountry: "KE",
+          },
+          areaServed: { "@type": "Country", name: "Kenya" },
+          founder: { "@type": "Person", name: "Anthony Kinuthia" },
+          sameAs: [SITE_URL],
+        }),
+      },
     ],
   }),
   component: HomePage,
