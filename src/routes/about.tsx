@@ -72,7 +72,7 @@ function AboutPage() {
           <div className="mx-auto max-w-7xl px-4 py-20 md:px-6 md:py-24">
             <div className="grid gap-12 md:grid-cols-12 md:items-center">
               <div className="md:col-span-5">
-                <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-full border-4 border-accent/30 shadow-[var(--shadow-elegant)]">
+                <div className="relative mx-auto aspect-square w-full max-w-sm scroll-mt-24 overflow-hidden rounded-full border-4 border-accent/30 shadow-[var(--shadow-elegant)]">
                   <img
                     src={founderPhoto}
                     alt="Anthony M. Kinuthia, Managing Partner at Kinuthia Anthony & Company Advocates"
