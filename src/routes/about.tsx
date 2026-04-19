@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Target, Scale, Lightbulb, ShieldCheck } from "lucide-react";
+import { ArrowRight, Target, Scale, Lightbulb, ShieldCheck, GraduationCap, Briefcase, Linkedin } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import founderPhoto from "@/assets/founder-anthony-kinuthia.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
