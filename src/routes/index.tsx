@@ -42,13 +42,12 @@ function HomePage() {
                 Advocates of the High Court of Kenya
               </p>
               <h1 className="font-serif text-4xl font-semibold leading-tight text-primary-foreground md:text-6xl">
-                Bespoke legal counsel.{" "}
-                <span className="text-accent">Delivered with integrity.</span>
+                Trusted legal counsel{" "}
+                <span className="text-accent">for a changing Kenya.</span>
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-foreground/80 md:text-lg">
-                Kinuthia Anthony & Company Advocates is a dynamic boutique law firm based in Nairobi —
-                serving individuals, businesses, government, multinationals and financial institutions
-                across Kenya.
+                A Nairobi-based boutique law firm delivering practical, business-minded solutions to
+                individuals, enterprises, government and financial institutions across Kenya and beyond.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <Link
