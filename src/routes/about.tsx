@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Target, Scale, Lightbulb, ShieldCheck } from "lucide-react";
+import { ArrowRight, Target, Scale, Lightbulb, ShieldCheck, GraduationCap, Briefcase, Linkedin } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import founderPhoto from "@/assets/founder-anthony-kinuthia.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -62,6 +63,86 @@ function AboutPage() {
                 keen ability to understand business and economic imperatives; and a strong focus on achieving the
                 best and most cost-effective legal outcomes for our clients.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Founder */}
+        <section className="bg-primary text-primary-foreground">
+          <div className="mx-auto max-w-7xl px-4 py-20 md:px-6 md:py-24">
+            <div className="grid gap-12 md:grid-cols-12 md:items-center">
+              <div className="md:col-span-5">
+                <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-full border-4 border-accent/30 shadow-[var(--shadow-elegant)]">
+                  <img
+                    src={founderPhoto}
+                    alt="Anthony M. Kinuthia, Managing Partner at Kinuthia Anthony & Company Advocates"
+                    width={760}
+                    height={880}
+                    loading="lazy"
+                    className="h-full w-full object-cover object-top"
+                  />
+                </div>
+              </div>
+              <div className="md:col-span-7">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">
+                  Meet the Managing Partner
+                </p>
+                <h2 className="mt-4 font-serif text-3xl font-semibold md:text-4xl">
+                  Anthony M. Kinuthia
+                </h2>
+                <p className="mt-2 text-sm font-medium text-accent">
+                  Managing Partner & Proprietor · Advocate of the High Court of Kenya
+                </p>
+                <p className="mt-6 leading-relaxed text-primary-foreground/85">
+                  Anthony founded Kinuthia Anthony & Company Advocates in 2021 after nearly a decade of
+                  practice at one of Nairobi's leading firms. He brings deep experience across litigation,
+                  constitutional and human rights law, commercial transactions, banking and finance — paired
+                  with a pragmatic, business-minded approach to every matter.
+                </p>
+
+                <div className="mt-8 grid gap-6 sm:grid-cols-2">
+                  <div>
+                    <div className="flex items-center gap-2 text-accent">
+                      <Briefcase className="h-4 w-4" />
+                      <h3 className="text-xs font-semibold uppercase tracking-wider">Experience</h3>
+                    </div>
+                    <ul className="mt-3 space-y-2 text-sm text-primary-foreground/80">
+                      <li>Proprietor — Kinuthia Anthony & Company Advocates (2021 – Present)</li>
+                      <li>Senior Associate — Nyachoti & Company Advocates (2019 – 2021)</li>
+                      <li>Junior Associate — Nyachoti & Company Advocates (2017 – 2018)</li>
+                      <li>Pupil — Nyachoti & Company Advocates (2016)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2 text-accent">
+                      <GraduationCap className="h-4 w-4" />
+                      <h3 className="text-xs font-semibold uppercase tracking-wider">Education</h3>
+                    </div>
+                    <ul className="mt-3 space-y-2 text-sm text-primary-foreground/80">
+                      <li>Post-Graduate Diploma in Law — Kenya School of Law (2015)</li>
+                      <li>Bachelor of Laws (LL.B.) — University of Nairobi (2010 – 2014)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <a
+                    href="https://www.linkedin.com/in/anthony-m-kinuthia-611358a3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-sm border border-primary-foreground/30 px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:border-accent hover:text-accent"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                    Connect on LinkedIn
+                  </a>
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-2 rounded-sm bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground hover:opacity-90"
+                  >
+                    Schedule a meeting <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>
