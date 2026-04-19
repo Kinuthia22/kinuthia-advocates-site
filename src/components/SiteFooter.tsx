@@ -50,8 +50,8 @@ export function SiteFooter() {
             </li>
             <li className="flex gap-3">
               <Mail className="h-4 w-4 shrink-0 text-accent" />
-              <a href="mailto:info@kinuthiaanthonyadvocates.co.ke" className="hover:text-accent break-all">
-                info@kinuthiaanthonyadvocates.co.ke
+              <a href="mailto:advocateskinuthia@gmail.com" className="hover:text-accent break-all">
+                advocateskinuthia@gmail.com
               </a>
             </li>
           </ul>
