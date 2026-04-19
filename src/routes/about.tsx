@@ -7,15 +7,19 @@ import founderPhoto from "@/assets/founder-anthony-kinuthia.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us | Kinuthia Anthony & Company Advocates" },
+      { title: "About Kinuthia Anthony & Company Advocates | Nairobi" },
       {
         name: "description",
         content:
-          "Learn about Kinuthia Anthony & Company Advocates — a Nairobi boutique law firm built on integrity, expertise and bespoke client service.",
+          "Learn about Kinuthia Anthony & Company Advocates — a Nairobi boutique law firm built on integrity, expertise and bespoke client service. Founded by Anthony Kinuthia.",
       },
       { property: "og:title", content: "About Kinuthia Anthony & Company Advocates" },
       { property: "og:description", content: "Boutique Nairobi law firm built on integrity, expertise and bespoke client service." },
+      { property: "og:url", content: "https://kinuthia-advocates-site.lovable.app/about" },
+      { property: "og:image", content: founderPhoto },
+      { name: "twitter:image", content: founderPhoto },
     ],
+    links: [{ rel: "canonical", href: "https://kinuthia-advocates-site.lovable.app/about" }],
   }),
   component: AboutPage,
 });

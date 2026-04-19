@@ -9,7 +9,7 @@ import { Toaster } from "@/components/ui/sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact | Kinuthia Anthony & Company Advocates, Nairobi" },
+      { title: "Contact Kinuthia Anthony & Company Advocates | Nairobi" },
       {
         name: "description",
         content:
@@ -17,7 +17,9 @@ export const Route = createFileRoute("/contact")({
       },
       { property: "og:title", content: "Contact Kinuthia Anthony & Company Advocates" },
       { property: "og:description", content: "Get in touch with our Nairobi law firm — call +254 793 980 462." },
+      { property: "og:url", content: "https://kinuthia-advocates-site.lovable.app/contact" },
     ],
+    links: [{ rel: "canonical", href: "https://kinuthia-advocates-site.lovable.app/contact" }],
   }),
   component: ContactPage,
 });
