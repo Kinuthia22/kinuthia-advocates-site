@@ -38,14 +38,17 @@ function HomePage() {
           <div className="absolute inset-0 bg-primary/85" aria-hidden="true" />
           <div className="relative mx-auto max-w-7xl px-4 py-24 md:px-6 md:py-36">
             <div className="max-w-3xl">
-              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.3em] text-accent">
-                Advocates of the High Court of Kenya
+              <p className="mb-5 font-serif text-sm font-semibold uppercase tracking-[0.25em] text-accent md:text-base">
+                KINUTHIA ANTHONY & COMPANY ADVOCATES
               </p>
               <h1 className="font-serif text-4xl font-semibold leading-tight text-primary-foreground md:text-6xl">
-                Trusted legal counsel{" "}
-                <span className="text-accent">for a changing Kenya.</span>
+                Your trusted{" "}
+                <span className="text-accent">legal partner.</span>
               </h1>
-              <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-foreground/80 md:text-lg">
+              <p className="mt-6 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/70 md:text-sm">
+                Advocates · Commissioners for Oaths · Notary Public
+              </p>
+              <p className="mt-5 max-w-2xl text-base leading-relaxed text-primary-foreground/80 md:text-lg">
                 A Nairobi-based boutique law firm delivering practical, business-minded solutions to
                 individuals, enterprises, government and financial institutions across Kenya and beyond.
               </p>
