@@ -49,10 +49,24 @@ export function SiteFooter() {
               <a href="tel:+254793980462" className="hover:text-accent">+254 793 980 462</a>
             </li>
             <li className="flex gap-3">
-              <Mail className="h-4 w-4 shrink-0 text-accent" />
-              <a href="mailto:advocateskinuthia@gmail.com" className="hover:text-accent break-all">
-                advocateskinuthia@gmail.com
-              </a>
+         <li className="flex gap-3">
+  <Mail className="h-4 w-4 shrink-0 text-accent" />
+  <div className="flex flex-col">
+    <a
+      href="mailto:info@advocateskinuthia.co.ke"
+      className="hover:text-accent break-all"
+    >
+      info@advocateskinuthia.co.ke
+    </a>
+
+    <a
+      href="mailto:advocateskinuthia@gmail.com"
+      className="hover:text-accent break-all text-primary-foreground/60"
+    >
+      advocateskinuthia@gmail.com
+    </a>
+  </div>
+</li>
             </li>
           </ul>
         </div>
