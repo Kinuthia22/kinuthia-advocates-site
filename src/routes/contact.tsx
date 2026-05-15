@@ -17,9 +17,9 @@ export const Route = createFileRoute("/contact")({
       },
       { property: "og:title", content: "Contact Kinuthia Anthony & Company Advocates" },
       { property: "og:description", content: "Get in touch with our Nairobi law firm — call +254 793 980 462." },
-      { property: "og:url", content: "https://kinuthia-advocates-site.lovable.app/contact" },
+      { property: "og:url", content: "https://advocateskinuthia.co.ke/contact" },
     ],
-    links: [{ rel: "canonical", href: "https://kinuthia-advocates-site.lovable.app/contact" }],
+    links: [{ rel: "canonical", href: "https://advocateskinuthia.co.ke/contact" }],
   }),
   component: ContactPage,
 });

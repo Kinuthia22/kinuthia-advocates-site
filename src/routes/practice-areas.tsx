@@ -15,9 +15,9 @@ export const Route = createFileRoute("/practice-areas")({
       },
       { property: "og:title", content: "Practice Areas — Kinuthia Anthony & Company Advocates" },
       { property: "og:description", content: "Comprehensive legal services across the Kenyan legal landscape." },
-      { property: "og:url", content: "https://kinuthia-advocates-site.lovable.app/practice-areas" },
+      { property: "og:url", content: "https://advocateskinuthia.co.ke/practice-areas" },
     ],
-    links: [{ rel: "canonical", href: "https://kinuthia-advocates-site.lovable.app/practice-areas" }],
+    links: [{ rel: "canonical", href: "https://advocateskinuthia.co.ke/practice-areas" }],
   }),
   component: PracticeAreasPage,
 });

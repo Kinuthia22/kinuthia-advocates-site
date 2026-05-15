@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { practiceAreas } from "@/lib/practice-areas";
 import heroImg from "@/assets/hero-justice.jpg";
 
-const SITE_URL = "https://kinuthia-advocates-site.lovable.app";
+const SITE_URL = "https://advocateskinuthia.co.ke";
 
 export const Route = createFileRoute("/")({
   head: () => ({

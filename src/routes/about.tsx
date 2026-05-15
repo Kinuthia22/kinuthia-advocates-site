@@ -15,11 +15,11 @@ export const Route = createFileRoute("/about")({
       },
       { property: "og:title", content: "About Kinuthia Anthony & Company Advocates" },
       { property: "og:description", content: "Boutique Nairobi law firm built on integrity, expertise and bespoke client service." },
-      { property: "og:url", content: "https://kinuthia-advocates-site.lovable.app/about" },
+      { property: "og:url", content: "https://advocateskinuthia.co.ke/about" },
       { property: "og:image", content: founderPhoto },
       { name: "twitter:image", content: founderPhoto },
     ],
-    links: [{ rel: "canonical", href: "https://kinuthia-advocates-site.lovable.app/about" }],
+    links: [{ rel: "canonical", href: "https://advocateskinuthia.co.ke/about" }],
   }),
   component: AboutPage,
 });
